@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Source.Data;
+using Source.Repositories;
+using Source.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,8 @@ builder.Services.AddDbContext<AppDbContext>
     )
 );
 
+builder.Services.AddScoped<ToDoService>();
+builder.Services.AddScoped<ToDoRepository>();
 
 var app = builder.Build();
 

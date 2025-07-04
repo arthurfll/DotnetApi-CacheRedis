@@ -1,6 +1,8 @@
 
 appsettings.Development.json
+data.db
 
 obj
 bin
 migrations
+
