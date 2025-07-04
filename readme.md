@@ -5,7 +5,7 @@ Este projeto é um exemplo simples de API ASP.NET Core que expõe endpoints para
 ## Requisitos
 
 - .NET 7 ou superior
-- Docker (ou Node.js com Azurite)
+- Conta Azure
 - Banco de dados compatível com sua connection string (ex: SQL Server)
 - Git
 
