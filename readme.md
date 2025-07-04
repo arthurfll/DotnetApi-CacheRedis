@@ -12,8 +12,8 @@ Este projeto é um exemplo simples de API ASP.NET Core que expõe endpoints para
 ## Clonando o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/arthurfll/DotnetApi-CacheRedis
+cd DotnetApi-CacheRedis
 dotnet build
 dotnet run
 
