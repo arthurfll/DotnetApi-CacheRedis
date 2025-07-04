@@ -8,6 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
+
+builder.Services.AddDistributedRedisCache
+(
+    options => options.Configuration=builder.Configuration.GetConnectionString("AzureRedisConnection")
+);
 builder.Services.AddDbContext<AppDbContext>
 (
     options => options.UseSqlite
